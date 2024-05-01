@@ -4,7 +4,7 @@ import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://xerahort.github.io',
+  site: 'https://jbaram.dev',
   integrations: [tailwind(), alpinejs()],
   output: 'static'
 });
