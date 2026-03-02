@@ -42,6 +42,23 @@ import Card from "./Card.astro";
       }
     </AccordionLayout>
 
+    <AccordionLayout title={"Thesis Supervision"} icon={"mdi:school-outline"}>
+      {
+        CONTENT.thesis.map((item) => {
+          return (
+            <Card
+              title={item.title}
+              timeframe={item.year}
+              description={item.student}
+              tags={item.type}
+              url={item.url}
+              url_name={"View in OA-UPM"}
+            />
+          );
+        })
+      }
+    </AccordionLayout>
+
     <AccordionLayout title={"Education"} icon={"carbon:education"}>
       {
         CONTENT.education.map((item) => {
