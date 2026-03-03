@@ -3,25 +3,26 @@ import { Icon } from "astro-icon";
 const { timeframe, title, description, url, tags, url_name } = Astro.props
 ---
 
-<div class="grid grid-cols-[max-content_1fr_auto] grid-rows-1 w-full p-2 place-items-center border-b-[1px] border-dashed py-8 border-text/25 gap-x-4">
-    <div class="self-start justify-self-start">
-        <p class="text-text/50 text-base">
+<div class="grid grid-cols-[max-content_1fr] grid-rows-1 w-full p-2 place-items-start border-b-[1px] border-dashed py-8 border-text/25 gap-x-6">
+    <div class="self-start justify-self-start pt-1">
+        <p class="text-text/50 text-sm whitespace-nowrap">
             { timeframe }
         </p>
     </div>
 
-    <div class="self-start justify-self-start text-left">
+    <div class="self-start justify-self-start text-left min-w-0">
         <p class="text-lg text-text/80">{title}</p>
-        <p class="text-sm text-text/70">{description}</p>
+        <p class="text-sm text-text/70 mt-1">{description}</p>
         <sub class="text-xs text-text/60">{tags}</sub>
-    </div>
-
-    <div class="self-start justify-self-end">
-        <a href={url} target="_blank" class="text-base text-right text-text/60 hover:text-text/80 flex justify-center items-center">
-            {url_name}
-            {
-               url !== "#" && <Icon name="icon-park-outline:unlink" class="w-4 h-4 ml-2" />
-            }
-        </a>
+        {url_name && (
+            url !== "#" ? (
+                <a href={url} target="_blank" class="mt-2 text-sm text-text/60 hover:text-text/80 flex items-center gap-1 w-fit">
+                    {url_name}
+                    <Icon name="icon-park-outline:unlink" class="w-4 h-4 shrink-0" />
+                </a>
+            ) : (
+                <p class="text-sm text-text/60 mt-1">{url_name}</p>
+            )
+        )}
     </div>
 </div>

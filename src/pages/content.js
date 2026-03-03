@@ -373,6 +373,52 @@ export const blogs = [
 	// }
 ]
 
+// Publications --> #publications section
+export const publications = [
+	{
+		year: "2025",
+		title: "Exploring the Integration of Large Language Models and Monte Carlo Tree Search in Team Formation for Turn-Based Games: a case-study with the VGC AI Competition",
+		authors: "Barambones, J.",
+		venue: "IEEE Transactions on Games",
+		url: "https://doi.org/10.1109/TG.2025.3613232",
+	},
+	{
+		year: "2024",
+		title: "ChatGPT for Learning HCI Techniques: A Case Study on Interviews for Personas",
+		authors: "Barambones, J., Moral, C., de Antonio, A., Imbert, R., Martínez-Normand, L., Villalba-Mora, E.",
+		venue: "IEEE Transactions on Learning Technologies, vol. 17, pp. 1486–1501",
+		url: "https://doi.org/10.1109/TLT.2024.3386095",
+	},
+	{
+		year: "2023",
+		title: "Multiagent Systems on Virtual Games: A Systematic Mapping Study",
+		authors: "Barambones, J., Cano-Benito, J., Sánchez-Rivero, I., Imbert, R., Richoux, F.",
+		venue: "IEEE Transactions on Games, vol. 15(2), pp. 134–147",
+		url: "https://doi.org/10.1109/TG.2022.3214154",
+	},
+	{
+		year: "2021",
+		title: "Resilient Team Formation with Stabilisability of Agent Networks for Task Allocation",
+		authors: "Barambones, J., Richoux, F., Imbert, R., Inoue, K.",
+		venue: "ACM Transactions on Autonomous and Adaptive Systems, vol. 15(3), pp. 1–24",
+		url: "https://doi.org/10.1145/3463368",
+	},
+	{
+		year: "2021",
+		title: "Applicability of Multi-Agent Systems and Constrained Reasoning for Sensor-Based Distributed Scenarios: A Systematic Mapping Study on Dynamic DCOPs",
+		authors: "Barambones, J., Imbert, R., Moral, C.",
+		venue: "Sensors, vol. 21(11), 3807",
+		url: "https://doi.org/10.3390/s21113807",
+	},
+	{
+		year: "2020",
+		title: "A Scrum-Based Development Process to Support Co-creation with Elders in the eHealth Domain",
+		authors: "Barambones, J., Moral, C., Ferre, X., Villalba-Mora, E.",
+		venue: "HCSE 2020, Lecture Notes in Computer Science, vol. 12481, pp. 105–117",
+		url: "https://doi.org/10.1007/978-3-030-64266-2_6",
+	},
+]
+
 // Achievements --> #achievement section
 export const achievements = [
 	{
