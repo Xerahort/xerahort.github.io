@@ -110,6 +110,23 @@ import Card from "./Card.astro";
       }
     </AccordionLayout>
 
+    <AccordionLayout title={"Publications"} icon={"mdi:book-open-page-variant-outline"}>
+      {
+        CONTENT.publications.map((item) => {
+          return (
+            <Card
+              title={item.title}
+              timeframe={item.year}
+              description={item.venue}
+              tags={item.authors}
+              url={item.url}
+              url_name={"View Paper"}
+            />
+          );
+        })
+      }
+    </AccordionLayout>
+
     <AccordionLayout title={"Achievements"} icon={"mdi:trophy-award"}>
       {
         CONTENT.achievements.map((item) => {
